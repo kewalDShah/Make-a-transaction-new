@@ -4,44 +4,44 @@ myBalance=200
 #Print the variable displaying your balance
 print("Your balance is : ", myBalance)
 
-#Initialize a variable to take input from user about receiver's name
+#Get the receiver's name as input from the user and store it in receiver variable
 receiver=input("Enter the receiver name: ")
 
-#Initialize a variable to take input from user about the amount to be transferred
+#Get the amount to transfer as input from the user and store it in amount variable
 amount=input("Enter the amount: ")
 
-#Convert the input of amount from string to int
-amount=int(amount)
+#Convert the amount value into integer and store it in a variable
+amountInInteger=int(amount)
 
 
 #Add a condition to check if the transfer amount is greater than the available amount in your account and print message accordingly
-if (amount>myBalance):
-  print("Insufficient Code")
+if (amountInInteger>myBalance):
+  print("Insufficient balance")
 else:
-  #Intialize a dictionary for storing transaction details
+  #create a dictionary to store transaction details
   transactionData= {"sender":"Kewal", 
                     "receiver":receiver,
-                    "Amount":amount
+                    "Amount":amountInInteger
                     }
 
   
-  #Initialize a dictionary to store the block data 
+  #Create a blockData dictionary for storing transaction details 
   blockData = {
     'block': 1,
     'Transaction':transactionData,
   }
 
-  #Initialize a list to store the blocks  
+  #create a list to store the blockData
   blockTransaction =[]
   
   #Append the block data in the list of blockTransaction
   blockTransaction.append(blockData)
   
-  #print the al comprising block transaction details
+  #print all the block transaction details
   print("Transaction details:", blockTransaction)
   
   #Update the account balace after subtracting the transferred amount.
-  my_balance=myBalance-amount
+  my_balance=myBalance-amountInInteger
   
-  #print the variable with the updated account balance.
+  #print the updated account balance.
   print("Your Balance is updated to ",myBalance)  
