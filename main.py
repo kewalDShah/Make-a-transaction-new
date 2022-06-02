@@ -1,8 +1,8 @@
 #Initialize a variable to hold your account balance
-my_balance=200
+myBalance=200
 
 #Print the variable displaying your balance
-print("Your balance is : ", my_balance)
+print("Your balance is : ", myBalance)
 
 #Initialize a variable to take input from user about receiver's name
 receiver=input("Enter the receiver name: ")
@@ -15,7 +15,7 @@ amount=int(amount)
 
 
 #Add a condition to check if the transfer amount is greater than the available amount in your account and print message accordingly
-if (amount>my_balance):
+if (amount>myBalance):
   print("Insufficient Code")
 else:
   #Intialize a dictionary for storing transaction details
@@ -41,7 +41,7 @@ else:
   print("Transaction details:", blockTransaction)
   
   #Update the account balace after subtracting the transferred amount.
-  my_balance=my_balance-amount
+  my_balance=myBalance-amount
   
   #print the variable with the updated account balance.
-  print("Your Balance is updated to ",my_balance)  
+  print("Your Balance is updated to ",myBalance)  
