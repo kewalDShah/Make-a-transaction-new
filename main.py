@@ -41,7 +41,7 @@ else:
   print("Transaction details:", blockTransaction)
   
   #Update the account balace after subtracting the transferred amount.
-  my_balance=myBalance-amountInInteger
+  myBalance=myBalance-amountInInteger
   
   #print the updated account balance.
   print("Your Balance is updated to ",myBalance)  
